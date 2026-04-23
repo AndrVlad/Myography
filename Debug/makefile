@@ -54,6 +54,9 @@ default.size.stdout \
 OBJDUMP_LIST += \
 Myography.list \
 
+OBJCOPY_HEX += \
+Myography.hex \
+
 
 # All Target
 all: main-build
@@ -77,12 +80,17 @@ Myography.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
+Myography.hex: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O ihex $(EXECUTABLES) "Myography.hex"
+	@echo 'Finished building: $@'
+	@echo ' '
+
 # Other Targets
 clean:
-	-$(RM) Myography.elf Myography.list Myography.map default.size.stdout
+	-$(RM) Myography.elf Myography.hex Myography.list Myography.map default.size.stdout
 	-@echo ' '
 
-secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
+secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_HEX)
 
 fail-specified-linker-script-missing:
 	@echo 'Error: Cannot find the specified linker script. Check the linker settings in the build configuration.'

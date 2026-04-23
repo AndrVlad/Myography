@@ -1069,8 +1069,8 @@ static void MX_TIM2_Init(void)
   sConfigOC.Pulse = 1;
  8000704:	2301      	movs	r3, #1
  8000706:	60bb      	str	r3, [r7, #8]
-  sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
- 8000708:	2300      	movs	r3, #0
+  sConfigOC.OCPolarity = TIM_OCPOLARITY_LOW;
+ 8000708:	2302      	movs	r3, #2
  800070a:	60fb      	str	r3, [r7, #12]
   sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
  800070c:	2300      	movs	r3, #0

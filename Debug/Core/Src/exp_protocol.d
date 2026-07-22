@@ -1,8 +1,6 @@
-Libraries/Src/protocol_parser.o: ../Libraries/Src/protocol_parser.c \
- C:/Users/vlado/STM32CubeIDE/workspace_1.12.0/Myography/Libraries/Inc/protocol_common.h \
- C:/Users/vlado/STM32CubeIDE/workspace_1.12.0/Myography/Libraries/Inc/protocol_parser.h \
- C:/Users/vlado/STM32CubeIDE/workspace_1.12.0/Myography/Libraries/Inc/SPI_Connection.h \
- ../Core/Inc/main.h ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+Core/Src/exp_protocol.o: ../Core/Src/exp_protocol.c \
+ ../Core/Inc/exp_protocol.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -30,13 +28,8 @@ Libraries/Src/protocol_parser.o: ../Libraries/Src/protocol_parser.c \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
- C:/Users/vlado/STM32CubeIDE/workspace_1.12.0/Myography/Drivers/25Q/w25q_spi.h \
- C:/Users/vlado/STM32CubeIDE/workspace_1.12.0/Myography/Libraries/Inc/sensor_utils.h \
- ../Core/Inc/Common.h
-C:/Users/vlado/STM32CubeIDE/workspace_1.12.0/Myography/Libraries/Inc/protocol_common.h:
-C:/Users/vlado/STM32CubeIDE/workspace_1.12.0/Myography/Libraries/Inc/protocol_parser.h:
-C:/Users/vlado/STM32CubeIDE/workspace_1.12.0/Myography/Libraries/Inc/SPI_Connection.h:
-../Core/Inc/main.h:
+ ../Core/Inc/main.h ../Core/Inc/exp_measurement.h
+../Core/Inc/exp_protocol.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 ../Core/Inc/stm32f1xx_hal_conf.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h:
@@ -65,6 +58,5 @@ C:/Users/vlado/STM32CubeIDE/workspace_1.12.0/Myography/Libraries/Inc/SPI_Connect
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:
-C:/Users/vlado/STM32CubeIDE/workspace_1.12.0/Myography/Drivers/25Q/w25q_spi.h:
-C:/Users/vlado/STM32CubeIDE/workspace_1.12.0/Myography/Libraries/Inc/sensor_utils.h:
-../Core/Inc/Common.h:
+../Core/Inc/main.h:
+../Core/Inc/exp_measurement.h:

@@ -80,6 +80,8 @@ extern bool write_cycle_closed;
 extern bool reach_end_of_flash;
 extern volatile uint16_t ADC_data_safe[10];
 extern bool need_selfcheck;
+extern uint16_t ADC_data_safe_1;
+extern bool need_to_send;
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus
